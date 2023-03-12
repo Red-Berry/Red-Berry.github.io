@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Linguaggi e Modelli Computazionali</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #F5F5F5;
+			margin: 0;
+			padding: 0;
+		}
+		h1 {
+			font-size: 36px;
+			font-weight: bold;
+			color: #333;
+			text-align: center;
+			margin-top: 50px;
+			margin-bottom: 30px;
+		}
+		p {
+			font-size: 18px;
+			color: #666;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1>Spunti di argmenti</h1>
+	<p><ul>
+  <li>Mostrare come l'analisi LR(0) mostri conflitti nella tabella di parsing. In particolare che quando effettua una riduzione la svolge su tutti i terminali di quello stato(perché non ha la conoscienza di carattere in ingresso attuale) e come il fatto di non poter distin guere i caratteri successivi comporta a situazione di conflitti qualora si presentassero prefissi identici a riduzioni di altri contesti(non riesce a capire se deve ridurre perchè un contesto lo richiede, oppure se andare avanti a leggere caratteri </li>
+  <li>Mostrare come l'insieme FOLLOW potrebbe risultare fondamentale nei linguaggi non deterministici...............?</li>
+  <li>Il self-embedding differenzia una grammatica di Tipo 2 da Tipo 3(rischioso, collegamento al pumping lemma, oltre ad essere complesso e poter prendere solo esempi semplici)</li>
+</ul></p>
+
+<h1>Tabella di marcia</h1>
+<ul>
+  <li><s>Fai su carta esercitazione pag 139. Calcola i contesti LR(1)</s></li>
+  <li>slide sulle grammatiche. Come capire se esiste una grammatica piu' semplice per un determinato linguaggio</li>
+  <li>slide ed esercizi sugli automi a stati finiti</li>
+  <li>algormitmi per passare da una grammatica regolare sinistra o destra all'espressione regolare, fai anche dall'espressione regoalre alla grammatica</li>
+  <li>slide 10 pacco Lambda Calcolo</li>
+  <li>esempi di riduzione con le diverse strategie nelle lambda expression + da li in poi studia</li>
+</ul>
+
+<h2>TEOREMI RANDOM</h2>
+<ul>
+	<li>ogni linguaggio context-free di alfabeto unitario è in realtà un linguaggio regolare</li>
+	<li>stabilire se una grammatica di Tipo 2 sia ambigua è un problema indecidibile(però, in pratica, un certo numero di derivazioni è spesso sufficiente per "convincersi" della (non per dimostrare la) ambiguità di G)[Se una grammatica è ambigua, spesso se ne può trovare 
+		un'altra che non lo sia - ma non sempre]</li>
+	<li>Un linguaggio si dice intrinsecamente ambiguo se tutte le grammatiche che lo generano sono ambigue</li>
+	<li>grammatiche di Tipo 2 e 3 possano "apparentemente" 
+		ammettere  sul lato destro delle produzioni, perché esiste sempre 
+		una grammatica equivalente senza e-rules (escluso al più S)</li>
+	<li>TEOREMA
+		<ul>
+			<li>Dato un linguaggio L di tipo 0, 1, 2, o 3</li>
+			<li> i linguaggi L unito {e} e L - {e} sono dello stesso tipo</li>
+
+		</ul>
+	</li>
+	<li>Capire se un linguaggio e' di Tipo 2 (o di Tipo 3) "solo guardandolo" in generale non e' banale [Il PUMPING LEMMA da' una condizione necessaria, 
+		ma non sufficiente, perche' un linguaggio sia di Tipo 2 (o 3)]</li>
+
+	<li>Un lambda termine e' in forma normale se non si possono 
+		applicare altre riduzioni[fortemente/debolmente/non normalizzabile</li>
+		<li>Teorema di Church-Rosser:
+			ogni lambda ha al piu' una forma normale</li>
+	<li>Il Lambda calcolo e' Turing-equivalente</li>
+	<li>PUNTO FISSO: in matematica, x e' un punto fisso per una funzione f se x=f(x), ossia la funzione mappa il valore x in se stesso</li>
+</ul>
+</body>
+</html>
